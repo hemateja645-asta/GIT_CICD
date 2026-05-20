@@ -1,0 +1,31 @@
+{
+  "name": "hacakathon_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "bdd": "cucumber-js --require step_definitions/**/*.js --require support/**/*.js",
+    "test:headless": "HEADLESS=true cucumber-js",
+    "Hos": "cucumber-js features/hospital.feature",
+    "Lab": "cucumber-js features/labtests.feature",
+    "Cor": "cucumber-js features/corporate.feature",
+    "ladrep": "cucumber-js features/labtests.feature --format json:reports/lab-report.json",
+    "report:lab": "node report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.8.0",
+    "allure-commandline": "^2.41.0",
+    "allure-cucumberjs": "^3.8.0",
+    "allure-js-commons": "^3.8.0",
+    "cucumber-html-reporter": "^7.2.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.8.3"
+  }
+}

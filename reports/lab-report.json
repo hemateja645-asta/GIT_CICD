@@ -1,0 +1,79 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "extract-top-cities-from-diagnostics-page;retrieve-top-cities-from-practo-diagnostics-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Retrieve top cities from Practo diagnostics page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3390381100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is on the Practo lab tests page",
+            "match": {
+              "location": "step_definitions\\labtests.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14355872900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user extracts the list of top cities",
+            "match": {
+              "location": "step_definitions\\labtests.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105405500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "user should see the available list of top cities",
+            "match": {
+              "location": "step_definitions\\labtests.steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5523600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2278460699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "extract-top-cities-from-diagnostics-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Extract Top Cities from Diagnostics Page",
+    "tags": [],
+    "uri": "features\\labtests.feature"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "extract-top-cities-from-diagnostics-page;retrieve-top-cities-from-practo-diagnostics-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Retrieve top cities from Practo diagnostics page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1958200700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is on the Practo lab tests page",
+            "match": {
+              "location": "step_definitions\\labtests.steps.js:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 25007247799,
+              "error_message": "TypeError: this.attach is not a function\n    at CustomWorld.<anonymous> (C:\\Users\\2489619\\OneDrive - Cognizant\\Desktop\\Hacakathon_Project\\step_definitions\\labtests.steps.js:17:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user extracts the list of top cities",
+            "match": {
+              "location": "step_definitions\\labtests.steps.js:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "user should see the available list of top cities",
+            "match": {
+              "location": "step_definitions\\labtests.steps.js:37"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 438129300,
+              "error_message": "TypeError: this.attach is not a function\n    at CustomWorld.<anonymous> (C:\\Users\\2489619\\OneDrive - Cognizant\\Desktop\\Hacakathon_Project\\support\\hooks.js:28:16)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "extract-top-cities-from-diagnostics-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Extract Top Cities from Diagnostics Page",
+    "tags": [],
+    "uri": "features\\labtests.feature"
+  }
+]
