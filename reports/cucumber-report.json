@@ -4,56 +4,69 @@
     "elements": [
       {
         "description": "",
-        "id": "extract-top-cities-from-diagnostics-page;retrieve-top-cities-from-practo-diagnostics-page",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Retrieve top cities from Practo diagnostics page",
+        "id": "find-hospitals-based-on-filters;verify-hospitals-with-rating,-24x7-and-parking",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Verify hospitals with rating, 24x7 and parking",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2803491000
+              "duration": 2051602700
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "user is on the Practo lab tests page",
+            "name": "user launches Practo homepage",
             "match": {
-              "location": "step_definitions\\labtests.steps.js:10"
+              "location": "step_definitions\\hospitals.steps.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 7445776499
+              "duration": 1605043900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "user extracts the list of top cities",
+            "name": "user searches hospitals in \"Bangalore\"",
             "match": {
-              "location": "step_definitions\\labtests.steps.js:17"
+              "location": "step_definitions\\hospitals.steps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 90246199
+              "duration": 16272012099
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "user should see the available list of top cities",
+            "name": "user filters hospitals with rating > 3.5 and open 24x7",
             "match": {
-              "location": "step_definitions\\labtests.steps.js:23"
+              "location": "step_definitions\\hospitals.steps.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 2478499
+              "duration": 507627100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user verifies parking availability",
+            "match": {
+              "location": "step_definitions\\hospitals.steps.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20345425899
             }
           },
           {
@@ -61,7 +74,86 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1787073300
+              "duration": 1446366399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "find-hospitals-based-on-filters;verify-hospitals-with-rating,-24x7-and-parking",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Verify hospitals with rating, 24x7 and parking",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2100369999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user launches Practo homepage",
+            "match": {
+              "location": "step_definitions\\hospitals.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1685563099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user searches hospitals in \"Chennai\"",
+            "match": {
+              "location": "step_definitions\\hospitals.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17092312599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "user filters hospitals with rating > 3.5 and open 24x7",
+            "match": {
+              "location": "step_definitions\\hospitals.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 460800899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user verifies parking availability",
+            "match": {
+              "location": "step_definitions\\hospitals.steps.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24182327799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1442807000
             }
           }
         ],
@@ -69,11 +161,11 @@
         "type": "scenario"
       }
     ],
-    "id": "extract-top-cities-from-diagnostics-page",
+    "id": "find-hospitals-based-on-filters",
     "line": 1,
     "keyword": "Feature",
-    "name": "Extract Top Cities from Diagnostics Page",
+    "name": "Find Hospitals based on filters",
     "tags": [],
-    "uri": "features\\labtests.feature"
+    "uri": "features\\hospital.feature"
   }
 ]
