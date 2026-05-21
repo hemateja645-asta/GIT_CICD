@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1958200700
+              "duration": 2803491000
             }
           },
           {
@@ -26,9 +26,8 @@
               "location": "step_definitions\\labtests.steps.js:10"
             },
             "result": {
-              "status": "failed",
-              "duration": 25007247799,
-              "error_message": "TypeError: this.attach is not a function\n    at CustomWorld.<anonymous> (C:\\Users\\2489619\\OneDrive - Cognizant\\Desktop\\Hacakathon_Project\\step_definitions\\labtests.steps.js:17:16)"
+              "status": "passed",
+              "duration": 7445776499
             }
           },
           {
@@ -37,11 +36,11 @@
             "line": 6,
             "name": "user extracts the list of top cities",
             "match": {
-              "location": "step_definitions\\labtests.steps.js:24"
+              "location": "step_definitions\\labtests.steps.js:17"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 90246199
             }
           },
           {
@@ -50,20 +49,19 @@
             "line": 7,
             "name": "user should see the available list of top cities",
             "match": {
-              "location": "step_definitions\\labtests.steps.js:37"
+              "location": "step_definitions\\labtests.steps.js:23"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2478499
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 438129300,
-              "error_message": "TypeError: this.attach is not a function\n    at CustomWorld.<anonymous> (C:\\Users\\2489619\\OneDrive - Cognizant\\Desktop\\Hacakathon_Project\\support\\hooks.js:28:16)"
+              "status": "passed",
+              "duration": 1787073300
             }
           }
         ],
